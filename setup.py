@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="matplotlib-autolayout",
-    version="0.0.3",
+    version="0.0.4",
     author="Eric Zhang",
     author_email="ericspring08@gmail.com",
     description="Auto layouts for matplotlib multiplots",
