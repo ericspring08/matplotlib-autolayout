@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from matplotlib_autolayout.apply_functions import apply_direction_count, apply_margin
+from matplotlib_autolayout.utils.apply_functions import apply_direction_count, apply_margin
 
 
 def autolayout(figure: plt.Figure, configuration=None):

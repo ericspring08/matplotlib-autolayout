@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import math
 
+
 def apply_direction_count(figure: plt.Figure, direction: str, count: int):
     if direction == "row":
         total_width = figure.get_figwidth()
@@ -10,7 +11,7 @@ def apply_direction_count(figure: plt.Figure, direction: str, count: int):
         columns = math.ceil(len(figure.axes) / count)
 
         # calculate the width of each plot
-        plot_height = total_height / count 
+        plot_height = total_height / count
         plot_width = total_width / columns
 
         for i, ax in enumerate(figure.axes):
@@ -22,7 +23,6 @@ def apply_direction_count(figure: plt.Figure, direction: str, count: int):
     elif direction == "column":
         total_width = figure.get_figwidth()
         total_height = figure.get_figheight()
-
 
         # count is the number in each row for column direction
         rows = math.ceil(len(figure.axes) / count)
